@@ -1,4 +1,6 @@
-# LAB04-AMP
+# Lab05-Multiplataforma-Navegation-FlatList
+
 Desarrollado por:
-Herrera Jara Jorge Sebastian
-Casas Carrion Ana Cecilia
+Herrera Jara Jorge
+Casas Carrion Ana
+
