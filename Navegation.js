@@ -1,11 +1,9 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 //Icons
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Entypo } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Entypo } from "@expo/vector-icons";
 
 //screens
 import HomeScreen from "./screens/HomeScreen";
@@ -85,11 +83,7 @@ const MyTabs = () => {
 };
 
 const Navegation = () => {
-	return (
-		<NavigationContainer>
-			<MyTabs />
-		</NavigationContainer>
-	);
+	return <MyTabs />;
 };
 
 export default Navegation;
