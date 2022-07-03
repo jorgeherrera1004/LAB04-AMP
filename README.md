@@ -1,2 +1,4 @@
 # LAB04-AMP
-Herrera y Casas
+Desarrollado por:
+Herrera Jara Jorge Sebastian
+Casas Carrion Ana Cecilia
