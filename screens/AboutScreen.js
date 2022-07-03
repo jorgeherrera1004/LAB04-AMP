@@ -15,39 +15,20 @@ import TextTruncate from "react-text-truncate";
 const DATA = [
 	{
 		id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-		nombre: "Jose Mamani Choquehuanca ",
+		nombre: "Ana Cecilia Casas ",
 		description: "Estudiante",
 		image:
 			"https://i.pinimg.com/564x/5f/48/7b/5f487b0a13f780ff0fae8abfd5aed9cd.jpg",
 	},
 	{
 		id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-		nombre: "Gabriel Cordoba Begazo",
+		nombre: "Jorge Herrera Jara",
 		description: "Estudiante",
 		image:
 			"https://i.pinimg.com/564x/d9/bd/88/d9bd8848d7d19b6d30e33daf28f09fdd.jpg",
 	},
-	{
-		id: "58694a0f-3da1-471f-bd96-145571e29d72ss",
-		nombre: "Andre Gallegos Quenaya",
-		description: "Estudiante",
-		image:
-			"https://i.pinimg.com/564x/7c/57/47/7c5747448271c2e48c00c5257803a7fd.jpg",
-	},
-	{
-		id: "58694a0f-3da1-471f-bd96-145571e29d72ad",
-		nombre: "Klebert Layme Arapa",
-		description: "Estudiante",
-		image:
-			"https://i.pinimg.com/564x/a2/45/0d/a2450df2d4c1cac880049b08c899f72f.jpg",
-	},
-	{
-		id: "58694a0f-3da1-471f-bd96-145571e29d72da",
-		nombre: "Nikoll Bonilla Hancco",
-		description: "Estudiante",
-		image:
-			"https://i.pinimg.com/564x/50/36/a5/5036a566268bae8d369652af20b399a5.jpg",
-	},
+	
+	
 ];
 
 const Item = ({ item, onPress, backgroundColor, textColor }) => (
