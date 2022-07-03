@@ -3,7 +3,9 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import useNavigation from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Movie_View = ({ route }) => {
+import Player from "../../app/components/Reproductor/Player";
+
+const Movie_View = ({ route, navigation }) => {
 	const { id } = route.params;
 	const [data, setData] = useState({
 		movie: [],
@@ -40,6 +42,20 @@ const Movie_View = ({ route }) => {
 			<View style={styles.container}>
 				<View style={styles.imageContainer}>
 					<Image style={styles.image} source={{ uri: data.movie.image }} />
+					<TouchableOpacity
+						style={styles.button}
+						onPress={() => navigation.navigate("Reproductor")}>
+						<Text style={styles.buttonText}>Play</Text>
+					</TouchableOpacity>
+					<TouchableOpacity
+						style={styles.button}
+						onPress={() =>
+							navigation.navigate("Trailer", {
+								videoURL: data.movie.embedUrls,
+							})
+						}>
+						<Text style={styles.buttonText}>Trailer</Text>
+					</TouchableOpacity>
 				</View>
 				<View style={styles.infoContainer}>
 					<View style={styles.header}>
@@ -59,6 +75,24 @@ const styles = StyleSheet.create({
 		flex: 1,
 		display: "flex",
 		justifyContent: "space-between",
+	},
+	button: {
+		backgroundColor: "#fff",
+		padding: 10,
+		borderRadius: 5,
+		alignSelf: "center",
+		margin: "10px",
+	},
+	buttonText: {
+		color: "#000",
+		fontSize: 20,
+	},
+	video: {
+		flex: 1,
+		width: "100%",
+		height: "100%",
+		backgroundColor: "black",
+		justifyContent: "center",
 	},
 	imageContainer: {
 		flex: 1,
